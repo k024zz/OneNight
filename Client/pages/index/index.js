@@ -15,6 +15,17 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     var that = this
+    //web request test
+    wx.request({
+      url: 'https://onenight.duapp.com/',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data)
+      }
+    })
+
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据
