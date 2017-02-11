@@ -1,0 +1,39 @@
+/* pages/createRoom/createRoom.wxss */
+
+.section {
+    width: 100%;
+}
+
+.section_title {
+    padding: 20rpx;
+}
+
+.section_content {
+    padding: 20rpx;
+    background-color: #fff;
+    border: 2rpx solid #eee;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    margin: 50rpx;
+    width: 50%;
+}
+
+.button_group {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#status_newbie {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#switch_newbie {
+    
+}

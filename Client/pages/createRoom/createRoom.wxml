@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="section">
+    <view class="section_title"> 游戏人数 </view>
+    <picker class="pickers" bindchange="bindPickerChange" value="{{index}}" range="{{people}}">
+      <view class="section_content">
+        {{people[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section_title"> 新手模式 </view>
+    <view class="section_content">
+      <text id="status_newbie"> {{status_newbie}} </text>
+      <switch id="switch_newbie" bindchange="bindSwitchNewbieChange"/>
+    </view>
+  </view>
+  <view class="button_group">
+    <button class="button" type="primary"> 创建 </button>
+    <button class="button" type="warn" bindtap="navigateBack">
+      取消
+    </button>
+  </view>
+</view>

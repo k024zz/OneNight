@@ -1,11 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="characters" src="/resource/characters/insomniac.png"></image>
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="cover" src="/resource/cover.png"></image>
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view>
+    <button type="primary" bindtap="navigateToCreateGame"> 创建房间 </button>
+    <button type="primary"> 加入房间 </button>
   </view>
 </view>

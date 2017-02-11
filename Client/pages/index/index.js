@@ -12,6 +12,22 @@ Page({
       url: '../logs/logs'
     })
   },
+  //navigate to create game
+  navigateToCreateGame: function() {
+    wx.navigateTo({
+      url: '/pages/createRoom/createRoom',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+        console.log("失败啦")
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this

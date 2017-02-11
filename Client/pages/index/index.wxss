@@ -21,6 +21,6 @@
 }
 
 .characters {
-  width: 200rpx;
-  height: 278rpx;
+  width: 398rpx;
+  height: 300rpx;
 }
